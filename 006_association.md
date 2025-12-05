@@ -43,10 +43,12 @@ end
 
 ### 属性の上書き
 関連付けられたオブジェクトの特定の属性を上書きしたい時
+```ruby
 factory :post do
   # ...
   association :author, factory: :user, last_name: "Writely"
 end
+```
 
 ### 関連付けの上書き
 `build`や`create`を呼び出す際に、関連付けられたオブジェクトを渡すことで、定義された関連付けを上書きすることができる。
